@@ -10,14 +10,14 @@ API.mixin(require('./lib/api_trade'));
 // 客户接口
 API.mixin(require('./lib/api_user'));
 
-var youzanAPI = null;
+// var youzanAPI = null;
 
-//确保只有一个instance
-var createAPI = function(proxy, appid, appsecret, format, version, signMethod) {
-  if(youzanAPI === null){
-    youzanAPI = new API(proxy, appid, appsecret, format, version, signMethod);
-  }
-  return youzanAPI;
-};
+// //确保只有一个instance
+// var createAPI = function(proxy, appid, appsecret, format, version, signMethod) {
+//   if(youzanAPI === null){
+//     youzanAPI = new API(proxy, appid, appsecret, format, version, signMethod);
+//   }
+//   return youzanAPI;
+// };
 
-module.exports = createAPI;
+module.exports = API;
