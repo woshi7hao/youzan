@@ -1,0 +1,34 @@
+{
+  "name": "youzan",
+  "version": "0.0.1",
+  "description": "nodejs sdk for www.youzan.com",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.11.0",
+    "moment": "^2.9.0",
+    "request": "^2.51.0",
+    "lodash": "^2.4.1",
+    "tracer": "^0.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "no test now"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frankwaizi/youzan.git"
+  },
+  "keywords": [
+    "youzan",
+    "koudaitong",
+    "kdt",
+    "有赞",
+    "口袋通"
+  ],
+  "author": "frank fan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frankwaizi/youzan/issues"
+  },
+  "homepage": "https://github.com/frankwaizi/youzan"
+}
