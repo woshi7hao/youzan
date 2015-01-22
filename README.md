@@ -5,7 +5,7 @@ nodejs sdk for www.youzan.com (koudaitong)
 ##Usage
 
     var youzan = require('youzan');
-    var youzanAPI = new API(proxy, appid, appsecret, format, version, signMethod);
+    var youzanAPI = new youzan(proxy, appid, appsecret, format, version, signMethod);
     
     var params = {
         "num_iid" : 78540
