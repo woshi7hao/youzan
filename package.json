@@ -1,6 +1,6 @@
 {
   "name": "youzan",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "nodejs sdk for www.youzan.com",
   "main": "index.js",
   "dependencies": {
@@ -8,7 +8,11 @@
     "request": "^2.51.0",
     "lodash": "^2.4.1"
   },
-  "devDependencies": {},
+  "dependencies": {
+    "request": "*",
+    "moment": "*",
+    "lodash": "*"
+  },
   "scripts": {
     "test": "no test now"
   },
@@ -24,6 +28,12 @@
     "口袋通"
   ],
   "author": "frank fan",
+  "maintainers": [
+    {
+      "name": "frank fan",
+      "email": "frankwaizi2008@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/frankwaizi/youzan/issues"
