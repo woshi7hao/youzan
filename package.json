@@ -1,6 +1,6 @@
 {
   "name": "youzan",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "nodejs sdk for www.youzan.com",
   "main": "index.js",
   "dependencies": {
