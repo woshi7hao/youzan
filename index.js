@@ -1,3 +1,4 @@
+'use strict';
 var API = require('./lib/api_common');
 // 商品接口
 API.mixin(require('./lib/api_item'));

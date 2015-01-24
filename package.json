@@ -4,11 +4,6 @@
   "description": "nodejs sdk for www.youzan.com",
   "main": "index.js",
   "dependencies": {
-    "moment": "^2.9.0",
-    "request": "^2.51.0",
-    "lodash": "^2.4.1"
-  },
-  "dependencies": {
     "request": "*",
     "moment": "*",
     "lodash": "*"
