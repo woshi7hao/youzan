@@ -28,20 +28,20 @@ describe('api_item', function() {
 	// 	});
 	// });
 
-	describe('deleteItem', function() {
-		it('should delete an item', function (done) {
-			var apiParams = {
-				'num_iid' : 2335153
-			};
+	// describe('deleteItem', function() {
+	// 	it('should delete an item', function (done) {
+	// 		var apiParams = {
+	// 			'num_iid' : 7180062
+	// 		};
 
-			api.deleteItem(apiParams, function (err, res, result) {
-				should.not.exist(err);
-				should.exist(result);
-				result.should.eql({"response": {"is_success": true}});
-				done();
-			});
-		});
-	});
+	// 		api.deleteItem(apiParams, function (err, res, result) {
+	// 			should.not.exist(err);
+	// 			should.exist(result);
+	// 			result.should.eql({"response": {"is_success": true}});
+	// 			done();
+	// 		});
+	// 	});
+	// });
 
 	describe('getItem', function() {
 		it('should return an item', function (done) {
@@ -50,6 +50,23 @@ describe('api_item', function() {
 			};
 
 			api.getItem(apiParams, function (err, res, result) {
+				should.not.exist(err);
+				should.exist(result);
+				result.should.have.propertyByPath('response', 'item');
+				done();
+			});
+		});
+	});
+
+	describe('updateItem', function() {
+		it('should return an item', function (done) {
+			var apiParams = {
+				'num_iid' : 2334970,
+				'title' : '改一下名字咯'
+			};
+			var filePaths = null;
+
+			api.updateItem(apiParams, filePaths, function (err, res, result) {
 				should.not.exist(err);
 				should.exist(result);
 				result.should.have.propertyByPath('response', 'item');

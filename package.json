@@ -6,7 +6,8 @@
   "dependencies": {
     "request": "*",
     "moment": "*",
-    "lodash": "*"
+    "lodash": "*",
+    "utf8" : "*"
   },
   "devDependencies": {
     "grunt": "*",
