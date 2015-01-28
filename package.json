@@ -1,12 +1,19 @@
 {
   "name": "youzan",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "nodejs sdk for www.youzan.com",
   "main": "index.js",
   "dependencies": {
     "request": "*",
     "moment": "*",
     "lodash": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "jshint": "*",
+    "mocha": "*",
+    "should": "^4.6.1"
   },
   "scripts": {
     "test": "no test now"
