@@ -1,11 +1,37 @@
-#youzan
+# youzan
 
 nodejs sdk for www.youzan.com (koudaitong)
 
-##Usage
+## 功能列表
+- 商品接口
+- 类目接口
+- 物流接口
+- 交易接口
+- 客户接口
+
+详细参见[有赞API文档](http://open.koudaitong.com/doc)
+
+## Installation
+
+```sh
+$ npm install youzan
+```
+
+## Usage
 ```js
 var youzan = require('youzan');
+
+
+var proxy = null;//公司内网proxy，不需要设置为null
+var appid = "";
+var appsecret = "";
+var format = "";
+var version = "";
+var signMethod = "";
+
 var youzanAPI = new youzan(proxy, appid, appsecret, format, version, signMethod);
+或
+var youzanAPI = new youzan(proxy, appid, appsecret);
 
 //get item
 var params = {
@@ -38,8 +64,6 @@ youzanAPI.addItem(params, filePaths, function(err, res, result){
     //deal with the result
 });
 ```
-##License
+## License
 
 The MIT License
-
-> Written with [StackEdit](https://stackedit.io/).

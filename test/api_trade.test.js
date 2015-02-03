@@ -8,7 +8,7 @@ describe('api_trade', function() {
 	describe('closeTrade', function() {
 		it('should return a trade', function (done) {
 			var apiParams = {
-				'tid' : 'E14077639126662',
+				'tid' : 'E20150202162859618550',
 				'close_reason' : '买家不想买了',
 				'fields' : ''
 			};
@@ -25,7 +25,7 @@ describe('api_trade', function() {
 	describe('getTrade', function() {
 		it('should return a trade', function (done) {
 			var apiParams = {
-				'tid' : 'E14077639126662',
+				'tid' : 'E20150202162859618550',
 				'fields' :''
 			};
 
@@ -41,7 +41,7 @@ describe('api_trade', function() {
 	describe('updateTradeMemo', function() {
 		it('should return a trade', function (done) {
 			var apiParams = {
-				'tid' : 'E14077639126662',
+				'tid' : 'E20150202162859618550',
 				'memo' : '重要的交易',
 				'fields' : ''
 			};
