@@ -17,7 +17,7 @@ describe('api_logistics', function() {
 			api.confirmDelivery(apiParams, function (err, res, result) {
 				should.not.exist(err);
 				should.exist(result);
-				result.should.eql({'response' : 'shipping' : {'is_success':true}});
+				result.should.eql({'response' : {'shipping' : {'is_success':true}}});
 				done();
 			});
 		});
@@ -32,7 +32,7 @@ describe('api_logistics', function() {
 			api.marksign(apiParams, function (err, res, result) {
 				should.not.exist(err);
 				should.exist(result);
-				result.should.eql({'response' : 'is_success' : true});
+				result.should.eql({'response' : {'is_success' : true}});
 				done();
 			});
 		});
