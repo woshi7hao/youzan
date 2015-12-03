@@ -16,9 +16,6 @@
     "mocha": "*",
     "should": "^4.6.1"
   },
-  "scripts": {
-    "test": "no test now"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/frankwaizi/youzan.git"

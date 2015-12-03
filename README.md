@@ -1,4 +1,4 @@
-# youzan
+# youzan ![](https://travis-ci.org/frankwaizi/youzan.svg?branch=master)
 
 nodejs sdk for www.youzan.com (koudaitong)
 
